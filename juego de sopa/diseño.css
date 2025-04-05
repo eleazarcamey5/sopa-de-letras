@@ -1,0 +1,93 @@
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e1f5e0;
+  padding: 20px;
+}
+
+h1 {
+  color: #2e7d32;
+}
+
+#timer {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #388e3c;
+}
+
+.buttons {
+  margin-bottom: 15px;
+}
+
+button {
+  margin: 0 5px;
+  padding: 8px 18px;
+  font-size: 15px;
+  background-color: #66bb6a;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4caf50;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: 2px solid #a5d6a7;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.cell.selected {
+  background-color: #c8e6c9;
+}
+
+.cell.found-letter {
+  background-color: #81c784 !important;
+  color: white;
+}
+
+.cell.missed-letter {
+  background-color: #ef9a9a !important;
+  color: white;
+}
+
+.words {
+  max-width: 300px;
+  text-align: center;
+}
+
+.found {
+  text-decoration: line-through;
+  color: #388e3c;
+  font-weight: bold;
+}
+
+#finishMessage {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
